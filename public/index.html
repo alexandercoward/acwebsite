@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Coward</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      hr {
+        margin-bottom: 15px;
+      }
+
+      ul {
+        margin-bottom: 15px;
+        padding: 0 30px;
+      }
+
+      .writingHeading {
+        text-align: center;
+      }
+
+      .writingDate {
+        text-align: center;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+
+      .markdown p {
+        margin-bottom: 10px;
+      }
+
+      .marginBottom15 {
+        margin-bottom: 15px;
+      }
+
+      .topSection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .mainDiv {
+        padding: 20px 35px;
+      }
+
+      .writingMainDiv {
+        padding: 20px 35px;
+        max-width: 700px;
+        margin: auto;
+      }
+
+      .publication_li {
+        margin-bottom: 10px;
+      }
+
+      .pub_div {
+        padding: 0 30px;
+      }
+
+      .imageContainer {
+        width: 500px;
+        margin-left: 30px;
+        margin-top: 10px;
+      }
+
+      #mainImage {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topSection {
+          flex-direction: column-reverse;
+        }
+
+        .imageContainer {
+          width: 200px;
+          height: 200px;
+          margin-bottom: 15px;
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <div class="topSection">
+        <div>
+          <h1>Dr. Alexander Coward</h1>
+          <div class="details">
+            <p class="marginBottom15">Hello everyone. Welcome to my website.</p>
+            <p class="marginBottom15">
+              I spent my early career as an academic mathematician, working
+              somewhere at the interface between pure mathematics and
+              theoretical computer science. I also taught at universities
+              including UC Davis, UC Berkeley, The University of Sydney, Thai
+              Nguyen University, and The University of Oxford, which is where I
+              did my undergrad and PhD.
+            </p>
+            <p class="marginBottom15">
+              In 2016 I left academia, at least in the formal sense, and became
+              a startup founder/entrepreneur. I'm involved in a number of
+              projects, some in a leading role, others in a supporting role.
+            </p>
+            <p class="marginBottom15">
+              If you're interested in being my student, please fill in the form
+              <a href="https://edeeu.education" target="_blank">here</a>.
+            </p>
+
+            <p class="marginBottom15">
+              I generally welcome people reaching out, and try to respond to
+              email eventually. For urgent matters I prefer phone calls.
+            </p>
+            <p>Phone/WhatsApp: +1 (415) 323-9469</p>
+            <p>Email: hello(at)alexandercoward.com</p>
+          </div>
+        </div>
+        <div class="imageContainer">
+          <img
+            id="mainImage"
+            src="/alexandercoward1.jpg"
+            alt="Alexander Coward"
+          />
+        </div>
+      </div>
+      <br />
+      <hr />
+      <h2>Writing</h2>
+      <ul>
+        <li>
+          All my mathematics papers are viewable on the
+          <a
+            href="https://arxiv.org/search/math?searchtype=author&query=Coward,+A"
+            target="_blank"
+            >arXiv</a
+          >.
+        </li>
+        <li>
+          Some of my thoughts about the world are published on
+          <a
+            href="https://www.fairobserver.com/author/alexander-coward/"
+            target="_blank"
+            >Fair Observer</a
+          >.
+        </li>
+        <li>
+          Back in 2013, when I was a lecturer at Berkeley, I wrote an email to
+          my students. A lot of people liked it, and some people didn't like it.
+          You can read it
+          <a
+            href="https://web.archive.org/web/20140215070723/http://alumni.berkeley.edu/california-magazine/just-in/2013-11-21/cal-lecturers-email-students-goes-viral-why-i-am-not"
+            target="_blank"
+            >here</a
+          >.
+        </li>
+        <li>
+          In 2015, also at Berkeley, I wrote some stuff about the Berkeley
+          Mathematics Department. A lot of people didn't like it, and some
+          people did like it. You can read it
+          <a
+            href="https://web.archive.org/web/20151019022855/http://alexandercoward.com/BlowingTheWhistleOnUCBerkeleyMathematics.html"
+            target="_blank"
+            >here</a
+          >.
+        </li>
+        <li>
+          In 2020, I wrote a piece for The Startup about the dynamics of
+          multi-sided marketplaces and why great startups can take a long time
+          to build. You can read it
+          <a
+            href="https://medium.com/swlh/dynamics-of-multi-sided-marketplaces-and-the-case-for-the-slow-startup-f45f7625eb78"
+            target="_blank"
+            >here</a
+          >.
+        </li>
+        <li>
+          In 2023, I wrote the whitepaper for Enso, a new type of user interface
+          for the decentralized internet. You can read it
+          <a
+            href="/ensowhitepaper.pdf"
+            target="_blank"
+            >here</a
+          >. You can learn more about Enso
+          <a href="https://ensoconnected.com" target="_blank">here</a>.
+        </li>
+        <li>
+          In 2025, I wrote some blog posts about the future of mathematics and
+          AI. You can read them
+          <a href="https://formalinsight.com/blog" target="_blank">here</a>.
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      const image = document.getElementById("mainImage");
+      image.onmouseenter = function () {
+        image.src = "/alexandercoward2.jpg";
+      };
+      image.onmouseleave = function () {
+        image.src = "/alexandercoward1.jpg";
+      };
+    </script>
+  </body>
+</html>
