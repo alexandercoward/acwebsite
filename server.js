@@ -119,6 +119,11 @@ app.post('/drafts/victory', async (req, res) => {
   res.send(loginPage('Incorrect password.'));
 });
 
+// Public essays
+app.get('/essays/victory', (req, res) => {
+  res.sendFile(path.join(__dirname, 'private', 'drafts-victory.html'));
+});
+
 // Serve static files from public directory
 app.use(express.static(path.join(__dirname, 'public'), {
   maxAge: '1d',
