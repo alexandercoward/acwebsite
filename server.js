@@ -121,7 +121,7 @@ app.post('/drafts/victory', async (req, res) => {
 
 // Public essays
 app.get('/essays/victory', (req, res) => {
-  res.sendFile(path.join(__dirname, 'private', 'drafts-victory.html'));
+  res.sendFile(path.join(__dirname, 'private', 'essays-victory.html'));
 });
 
 // Serve static files from public directory
