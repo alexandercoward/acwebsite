@@ -34,5 +34,5 @@ jobs:
         with:
           token: ${{ secrets.DEPLOY_TOKEN }}
           repository: alexandercoward/platform
-          event-type: deploy
+          event-type: deploy-acwebsite
           client-payload: '{"app": "acwebsite"}'
