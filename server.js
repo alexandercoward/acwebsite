@@ -124,6 +124,16 @@ app.get('/essays/victory', (req, res) => {
   res.sendFile(path.join(__dirname, 'private', 'essays-victory.html'));
 });
 
+// YouTube search subdomain
+app.use((req, res, next) => {
+  if (req.hostname === 'youtube.alexandercoward.com') {
+    if (req.path === '/' || req.path === '/index.html') {
+      return res.sendFile(path.join(__dirname, 'public', 'youtube.html'));
+    }
+  }
+  next();
+});
+
 // Serve static files from public directory
 app.use(express.static(path.join(__dirname, 'public'), {
   maxAge: '1d',
